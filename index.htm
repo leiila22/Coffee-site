@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header { background: url('img/header-bg.jpg') center/cover;height: 100vh;}
+        .menyu {background: url('img/menu-bg.jpg') center/cover;}
+        .menyu1 { box-shadow: 1px 1px 10px 3px #b6883433; }
+        footer { background: url('img/footer-bg.jpg') center/cover;   background-repeat: no-repeat;  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="py-4 px-10 lg:px-24">
+            <div class="md:flex justify-end hidden">
+                <ul class="text-white flex flex-row gap-4 justify-end text-[15px] font-light font-sans">
+                    <li>Mon-Fri: 8am to 2pm</li>
+                    <li>Sat-Sun: 11am to 4pm</li>
+                    <li> (012) 6985 236 7512</li>
+                </ul>
+            </div>
+            <div class="hidden sm:flex flex-row justify-between pt-2">
+                <img src="img/logo.png" alt="">
+                <menu class="text-white hidden sm:flex flex-row gap-4 text-[14px] font-normal font-sans">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COFFEE</a></li>
+                    <li><a href="">REVIEW</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">PAGES</a></li>
+                </menu>
+            </div>
+            <div class="sm:hidden flex flex-row justify-between pt-2">
+                <img src="img/logo.png" alt="">
+                <i class="fa-solid fa-bars text-white text-2xl cursor-pointer" onclick="menuac()"></i>
+                <div id="menu" style="left: -100%;"
+                    class="open-menu text-white flex items-start flex-row justify-between absolute top-0 bg-[#000000a9] w-[50%] h-[100vh] transition-all duration-300">
+                    <ul class="flex items-center flex-col mx-5 my-12 gap-5 text-[14px] font-bold">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COFFEE</a></li>
+                        <li><a href="">REVIEW</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">PAGES</a></li>
+                    </ul>
+                    <i onclick="closemenu()" class="fa-solid fa-x m-5 cursor-pointer "></i>
+                </div>
+            </div>
+        </div>
+        <div class="mt-40 lg:mt-2 px-10 lg:px-24 inline-flex flex-col gap-5  text-white font-semibold">
+            <h6 class="uppercase text-[15px] ">Now you can feel the Energy</h6>
+            <h1 class="lg:text-[68px] sm:text-5xl text-3xl   lg:leading-20">Start your day with <br>a black Coffee</h1>
+            <a href="" class="px-6 py-2 rounded-2xl bg-white text-black mr-auto"> BUY NOW</a>
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <div class="flex flex-col items-center lg:flex-row mx-8 lg:mx-20 my-10 gap-10 lg:gap-30">
+                <div class=" rounded-xl overflow-hidden  mx-auto"><img src="img/video-bg.jpg" alt=""></div>
+                <div class="lg:w-1/2">
+                    <h6 class="text-[#b68834] text-[16px] tracking-[2px] uppercase font-normal">Live Coffee making
+                        process.</h6>
+                    <h2 class="lg:text-5xl text-3xl font-semibold">We Telecast our <br>Coffee Making Live</h2>
+                    <h5 class="my-3">We are here to listen from you deliver exellence</h5>
+                    <p class="text-[#777777] mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                    <img src="img/signature.png" alt="" class="w-26">
+                </div>
+            </div>
+        </section>
+        <section class="menyu py-25 sm:px-15 px-8">
+            <div class="text-center">
+                <h3 class="text-4xl font-semibold">What kind of Coffee we serve for you</h3>
+                <p class="text-[15px] font-light text-[#777] my-3">Who are in extremely love with eco friendly system.
+                </p>
+            </div>
+            <div class=" py-8 gap-4 lg:grid-cols-3 grid-cols-1 grid">
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex  pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Cappuccino</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Americano</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Espresso</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Macchiato</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Mocha</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Coffee Latte</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Piccolo Latte</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Ristretto</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+                <div class="col-lg-4 bg-white menyu1 rounded-2xl px-5 py-8">
+                    <div class="justify-between flex pb-2">
+                        <h4 class="text-[19px] text-[#222] font-medium">Affogato</h4>
+                        <p class="text-[#b68834] text-[19px]"> $49</p>
+                    </div>
+                    <p class="text-[#777] text-[15px] font-light">Usage of the Internet is becoming more common due to
+                        rapid advance.</p>
+                </div>
+
+            </div>
+        </section>
+        <section class="py-25 px-15">
+            <div class="text-center">
+                <h3 class="text-4xl font-semibold">What kind of Coffee we serve for you</h3>
+                <p class="text-[15px] font-light text-[#777] my-3">Who are in extremely love with eco friendly system.
+                </p>
+            </div>
+            <div class="flex md:flex-row flex-col gap-4 lg:mx-30">
+                <div class="flex flex-col gap-4">
+                    <img src="img/g1.jpg" alt="">
+                    <img src="img/g2.jpg" alt="">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="md:col-span-2"><img src="img/g3.jpg" alt=""></div>
+                    <div><img src="img/g4.jpg" alt=""></div>
+                    <div><img src="img/g5.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-[#b68834] py-20 px-4 lg:px-20">
+            <div class="text-center text-white">
+                <h3 class="text-4xl font-semibold">What kind of Coffee we serve for you</h3>
+                <p class="text-[15px] font-light  my-3">Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="flex md:flex-row flex-col gap-10 pt-15 ">
+                <div>
+                    <img src="img/r1.png" alt="">
+                    <div class=" gap-4 flex flex-row my-3 items-center">
+                        <h4 class="text-[19px] font-semibold text-white">lorem ipusm</h4>
+                        <div class="stars ">
+                            <i class="fa fa-star text-yellow-400"></i>
+                            <i class="fa fa-star text-yellow-400"></i>
+                            <i class="fa fa-star text-yellow-400"></i>
+                            <i class="fa fa-star text-white"></i>
+                            <i class="fa fa-star text-white"></i>
+                        </div>
+                    </div>
+                    <p class="text-white">Accessories Here you can find the best computer accessory for your laptop,
+                        monitor, printer, scanner, speaker. Here you can find the best computer accessory for your
+                        laptop, monitor, printer, scanner, speaker.</p>
+                </div>
+                <div>
+                    <img src="img/r2.png" alt="">
+                    <div class=" gap-4 flex flex-row my-3 items-center">
+                        <h4 class="text-[19px] font-semibold text-white">lorem ipusm</h4>
+                        <div class="stars ">
+                            <i class="fa fa-star text-yellow-400"></i>
+                            <i class="fa fa-star text-yellow-400"></i>
+                            <i class="fa fa-star text-yellow-400"></i>
+                            <i class="fa fa-star text-white"></i>
+                            <i class="fa fa-star text-white"></i>
+                        </div>
+                    </div>
+                    <p class="text-white">Accessories Here you can find the best computer accessory for your laptop,
+                        monitor, printer, scanner, speaker. Here you can find the best computer accessory for your
+                        laptop, monitor, printer, scanner, speaker.</p>
+                </div>
+            </div>
+            <div
+                class="pt-20 text-white flex flex-wrap flex-row sm:justify-between md:gap-22 gap-6 ml-6 sm:ml-0 font-[100]">
+                <div class="flex flex-col gap-2 items-center">
+                    <h1 class="lg:text-[68px] text-5xl ">2536</h1>
+                    <h5>Happy Client</h5>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <h1 class="lg:text-[68px] text-5xl ">7562</h1>
+                    <h5>Total Projects</h5>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <h1 class="lg:text-[68px] text-5xl ">2013</h1>
+                    <h5>Cups Coffee</h5>
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <h1 class="lg:text-[68px] text-5xl ">10536</h1>
+                    <h5>Total Submitted</h5>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 px-4 lg:px-20">
+            <div class="text-center text-black">
+                <h3 class="text-4xl font-semibold">What kind of Coffee we serve for you</h3>
+                <p class="text-[15px] font-light  my-3">Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="flex sm:flex-row flex-col py-9 gap-15">
+                <div>
+                    <img src="img/b1.jpg" alt="">
+                    <div class="py-5 flex flex-row gap-3">
+                        <a href="" class=" rounded-2xl border px-6 py-1">Travel</a>
+                        <a href="" class=" rounded-2xl border px-6 py-1">Life Style</a>
+                    </div>
+                    <h4 class="text-[#222] text-[19px] font-semibold">Portable latest Fashion for young women</h4>
+                    <p class="text-[#777] text-[15px] font-light py-4">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p class="text-[16px]">31st January, 2018</p>
+                </div>
+                <div>
+                    <img src="img/b2.jpg" alt="">
+                    <div class="py-5 flex flex-row gap-3">
+                        <a href="" class=" rounded-2xl border px-6 py-1">Travel</a>
+                        <a href="" class=" rounded-2xl border px-6 py-1">Life Style</a>
+                    </div>
+                    <h4 class="text-[#222] text-[19px] font-semibold">Portable latest Fashion for young women</h4>
+                    <p class="text-[#777] text-[15px] font-light py-4">Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                    <p class="text-[16px]">31st January, 2018</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="">
+        <div class="flex items-start flex-col md:flex-row md:pr-0 px-10  pt-44 pb-30 md:pl-20 gap-15 ">
+            <div class="text-white w-full  lg:w-7/12">
+                <h6 class="text-[19px] font-semibold">About Us</h6>
+                <p class="py-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore dolore magna aliqua.</p>
+                <p class="">
+                    Copyright &copy; All rights reserved | This template is made with <span class="text-[#b68834]">♡</span> by <span class="text-[#b68834]">Colorlib</span>
+                </p>
+            </div>
+            <div class="text-white w-full  lg:w-3/12">
+                <h6 class="text-[19px] font-semibold">Newsletter</h6>
+                <p class="py-5"> Stay update with our latest</p>
+                <div class="flex">
+                    <input type="email" name="" id="" placeholder="Enter Email"  class="bg-white h-9 w-70 placeholder:text-[#777] px-3">
+                <button class="bg-[#b68834] w-8">➞</button>
+                </div>
+            </div>
+            <div class="text-white w-full  lg:w-3/12">
+                <h6 class="text-[19px] font-semibold">Follow Us</h6>
+                <p class="py-5"> Let us be social</p>
+                <div class="flex flex-row gap-3">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-dribbble"></i>
+                    <i class="fa-brands fa-behance"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let menu = document.getElementById('menu');
+
+        function menuac() {
+            menu.style.left = 0;
+        }
+
+        function closemenu() {
+            menu.style.left = '-100%';
+        }
+    </script>
+</body>
+
+</html>
