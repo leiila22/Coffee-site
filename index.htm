@@ -11,7 +11,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        header { background: url('img/header-bg.jpg') center/cover;height: 100vh;}
+        header { background: url('img/header-bg.jpg') center/cover; height: 100vh;}
         .menyu {background: url('img/menu-bg.jpg') center/cover;}
         .menyu1 { box-shadow: 1px 1px 10px 3px #b6883433; }
         footer { background: url('img/footer-bg.jpg') center/cover;   background-repeat: no-repeat;  }
@@ -39,11 +39,12 @@
                     <li><a href="">PAGES</a></li>
                 </menu>
             </div>
-            <div class="sm:hidden flex flex-row justify-between pt-2">
+            <div class="sm:hidden flex flex-row justify-between pt-2 relative">
                 <img src="img/logo.png" alt="">
                 <i class="fa-solid fa-bars text-white text-2xl cursor-pointer" onclick="menuac()"></i>
-                <div id="menu" style="left: -100%;"
-                    class="open-menu text-white flex items-start flex-row justify-between absolute top-0 bg-[#000000a9] w-[50%] h-[100vh] transition-all duration-300">
+                
+                <!-- fixed top-0 yanına 'left-0' və 'z-50' əlavə olundu -->
+                <div id="menu" style="left: -100%;" class="open-menu text-white flex items-start flex-row justify-between fixed top-0 left-0 z-50 bg-[#000000a9] w-[50%] h-screen transition-all duration-300">
                     <ul class="flex items-center flex-col mx-5 my-12 gap-5 text-[14px] font-bold">
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -52,7 +53,7 @@
                         <li><a href="">BLOG</a></li>
                         <li><a href="">PAGES</a></li>
                     </ul>
-                    <i onclick="closemenu()" class="fa-solid fa-x m-5 cursor-pointer "></i>
+                    <i onclick="closemenu()" class="fa-solid fa-x m-5 cursor-pointer"></i>
                 </div>
             </div>
         </div>
